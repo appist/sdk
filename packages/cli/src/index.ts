@@ -2,6 +2,7 @@ import sade from "sade";
 import dev from "./dev";
 import parallel from "./parallel";
 import rm from "./rm";
+import start from "./start";
 
 const cli = sade("app");
 
@@ -28,5 +29,7 @@ cli
 		"",
 	)
 	.action(parallel);
+
+cli.command("start", "Start the app in production mode.").action(start);
 
 cli.parse(process.argv);

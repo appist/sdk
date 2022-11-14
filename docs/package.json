@@ -3,6 +3,7 @@
   "sideEffects": false,
   "type": "module",
   "scripts": {
+    "app": "app",
     "dev": "app dev"
   },
   "devDependencies": {

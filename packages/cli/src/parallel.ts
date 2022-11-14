@@ -3,7 +3,7 @@ import { execaCommand } from "execa";
 
 const COLORS = ["blue", "cyan", "gray", "green", "magenta", "red", "yellow"];
 
-export default async ({ _: commands, n }: { _: string[]; n: string }) => {
+export default ({ _: commands, n }: { _: string[]; n: string }) => {
 	try {
 		const names = n.split(",");
 		let longestLength = 0;
