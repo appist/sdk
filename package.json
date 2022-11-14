@@ -1,0 +1,26 @@
+{
+  "name": "app-monorepo",
+  "scripts": {
+    "clean": "app rm **/dist",
+    "dev": "app parallel -n dev:cli,dev:cla 'pnpm --silent dev:cli' 'pnpm --silent dev:cla'",
+    "dev:cli": "pnpm -C packages/cli dev"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "MIT",
+  "keywords": [
+    "fullstack",
+    "monolith",
+    "orm",
+    "prisma",
+    "tools",
+    "trpc",
+    "websocket"
+  ],
+  "packageManager": "pnpm@7.14.0",
+  "private": true,
+  "devDependencies": {
+    "@appist/cli": "workspace:*"
+  }
+}

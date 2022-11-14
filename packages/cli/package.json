@@ -1,0 +1,29 @@
+{
+  "name": "@appist/cli",
+  "version": "0.0.1",
+  "sideEffects": false,
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "app": "./bin/app.js"
+  },
+  "files": [
+    "bin",
+    "dist"
+  ],
+  "scripts": {
+    "dev": "tsc --preserveWatchOutput --watch"
+  },
+  "dependencies": {
+    "chalk": "^5.1.2",
+    "execa": "^6.1.0",
+    "rimraf": "^3.0.2",
+    "sade": "^1.8.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "@types/rimraf": "^3.0.2",
+    "@types/sade": "^1.7.4",
+    "typescript": "^4.8.4"
+  }
+}

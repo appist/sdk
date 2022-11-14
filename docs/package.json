@@ -1,0 +1,11 @@
+{
+  "name": "docs",
+  "sideEffects": false,
+  "type": "module",
+  "scripts": {
+    "dev": "app dev"
+  },
+  "devDependencies": {
+    "@appist/cli": "workspace:*"
+  }
+}
