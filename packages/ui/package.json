@@ -1,5 +1,6 @@
 {
   "name": "@appist/ui",
+  "description": "A modern UI library built with Qwik/UnoCSS.",
   "version": "0.0.1",
   "private": false,
   "type": "module",
@@ -27,6 +28,7 @@
     "build.types": "tsc --emitDeclarationOnly",
     "clean": "app rm lib,lib-types,*.tsbuildinfo",
     "dev": "nodemon -w src -e 'ts tsx' -q --exec 'pnpm run build'",
+    "release": "npm publish --access=public",
     "test": "vitest --passWithNoTests"
   },
   "devDependencies": {
