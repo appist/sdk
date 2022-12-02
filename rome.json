@@ -1,0 +1,32 @@
+{
+  "formatter": {
+    "enabled": true,
+    "ignore": [
+      "dist/",
+      "lib/",
+      "node_modules/",
+      "public/build/",
+      "public/~partytown/",
+      "server/",
+      "pnpm-lock.yaml"
+    ]
+  },
+  "linter": {
+    "enabled": true,
+    "ignore": [
+      "dist/",
+      "lib/",
+      "node_modules/",
+      "public/build/",
+      "public/~partytown/",
+      "server/",
+      "pnpm-lock.yaml"
+    ],
+    "rules": {
+      "recommended": true,
+      "security": {
+        "noDangerouslySetInnerHtml": "off"
+      }
+    }
+  }
+}

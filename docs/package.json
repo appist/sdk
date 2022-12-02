@@ -1,0 +1,27 @@
+{
+  "name": "docs",
+  "description": "The docs site.",
+  "private": true,
+  "scripts": {
+    "build": "qwik build",
+    "build.client": "vite build",
+    "build.types": "tsc --incremental --noEmit",
+    "dev": "vite --mode ssr",
+    "start": "vite --open --mode ssr"
+  },
+  "dependencies": {
+    "@appist/ui": "workspace:*"
+  },
+  "devDependencies": {
+    "@builder.io/qwik": "^0.14.1",
+    "@builder.io/qwik-city": "^0.0.127",
+    "@types/node": "^18.11.9",
+    "@unocss/reset": "^0.47.5",
+    "@unocss/transformer-directives": "^0.47.5",
+    "node-fetch": "^3.3.0",
+    "typescript": "^4.8.4",
+    "unocss": "^0.47.5",
+    "vite": "^3.2.4",
+    "vite-tsconfig-paths": "^3.6.0"
+  }
+}

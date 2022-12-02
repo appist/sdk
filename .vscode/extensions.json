@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "antfu.unocss",
+    "arrterian.nix-env-selector",
+    "bbenoist.nix",
+    "eamodio.gitlens",
+    "editorconfig.editorconfig",
+    "esbenp.prettier-vscode",
+    "jnoortheen.nix-ide",
+    "prisma.prisma",
+    "redhat.vscode-yaml",
+    "vscode-icons-team.vscode-icons",
+    "rome.rome"
+  ]
+}

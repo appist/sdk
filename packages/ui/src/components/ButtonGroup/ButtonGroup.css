@@ -1,0 +1,27 @@
+.btn-group {
+  @apply flex;
+}
+
+.btn-group > * {
+  @apply rounded-none focus:ring-offset-0 focus:z-10 justify-center justify-items-center;
+}
+
+.btn-group.btn-group-horizontal > :first-of-type {
+  @apply ltr:rounded-l-md ltr:border-r-0 rtl:rounded-r-md rtl:border-l-0;
+}
+
+.btn-group.btn-group-horizontal > :last-of-type {
+  @apply ltr:rounded-r-md ltr:border-l-0 rtl:rounded-l-md rtl:border-r-0;
+}
+
+.btn-group.btn-group-vertical {
+  @apply flex-col;
+}
+
+.btn-group.btn-group-vertical > :first-of-type {
+  @apply rounded-t-md border-b-0 ;
+}
+
+.btn-group.btn-group-vertical > :last-of-type {
+  @apply rounded-b-md border-t-0;
+}
