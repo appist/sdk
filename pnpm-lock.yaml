@@ -68,6 +68,7 @@ importers:
 
   packages/ui:
     specifiers:
+      '@appist/cli': workspace:*
       '@builder.io/qwik': ^0.14.1
       '@builder.io/qwik-city': ^0.0.127
       '@types/node': ^18.11.9
@@ -79,6 +80,7 @@ importers:
       vite-tsconfig-paths: ^3.6.0
       vitest: ^0.25.3
     devDependencies:
+      '@appist/cli': link:../cli
       '@builder.io/qwik': 0.14.1
       '@builder.io/qwik-city': 0.0.127
       '@types/node': 18.11.9

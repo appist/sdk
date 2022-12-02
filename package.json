@@ -1,7 +1,6 @@
 {
   "name": "appist-sdk",
   "scripts": {
-    "clean": "app rm **/dist,**/lib,**/lib-types",
     "dev": " pnpm -r build && app parallel -n dev:cli,dev:core,dev:docs,dev:ui 'pnpm -C packages/cli dev' 'pnpm -C packages/core dev' 'pnpm -C docs dev' 'pnpm -C packages/ui dev'",
     "quality": "rome format . --write && rome check . --apply-suggested",
     "quality.check": "rome ci ."
