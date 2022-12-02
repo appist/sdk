@@ -1,7 +1,7 @@
 {
   "name": "@appist/ui",
   "description": "A modern UI library built with Qwik/TailwindCSS.",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "private": false,
   "type": "module",
   "license": "MIT",
