@@ -167,7 +167,6 @@ export const Button = component$((props: ButtonProps) => {
 				return `${icon ? "p-3 rounded-full" : "px-6 py-3"} text-base`;
 		}
 	};
-
 	const getVariantClasses = (variant: Variant = "primary") => {
 		switch (variant) {
 			case "primary":
@@ -180,6 +179,7 @@ export const Button = component$((props: ButtonProps) => {
 				return "bg-white border-gray-300 hover:bg-gray-50 focus:ring-brand-500 shadow-sm text-gray-700";
 		}
 	};
+	const iconSize = getIconSize(size);
 
 	return (
 		<Element
@@ -203,8 +203,9 @@ export const Button = component$((props: ButtonProps) => {
 						"animate-spin": loading,
 					})}
 					icon={loading ? loaderIcon : leftIcon}
-					width={getIconSize(size)}
-					height={getIconSize(size)}
+					width={iconSize}
+					height={iconSize}
+					style={`width: ${iconSize}px; height: ${iconSize}px;`}
 				/>
 			) : null}
 
@@ -212,8 +213,9 @@ export const Button = component$((props: ButtonProps) => {
 				<iconify-icon
 					class={clsx({ "animate-spin": loading })}
 					icon={loading ? loaderIcon : icon}
-					width={getIconSize(size)}
-					height={getIconSize(size)}
+					width={iconSize}
+					height={iconSize}
+					style={`width: ${iconSize}px; height: ${iconSize}px;`}
 				/>
 			) : (
 				<Slot />
@@ -226,8 +228,9 @@ export const Button = component$((props: ButtonProps) => {
 						"animate-spin": loading,
 					})}
 					icon={loading ? loaderIcon : rightIcon}
-					width={getIconSize(size)}
-					height={getIconSize(size)}
+					width={iconSize}
+					height={iconSize}
+					style={`width: ${iconSize}px; height: ${iconSize}px;`}
 				/>
 			) : null}
 		</Element>

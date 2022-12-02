@@ -5,11 +5,13 @@ import { Button } from "@appist/ui";
 export default component$(() => {
 	return (
 		<>
-			<Button>Submit</Button>
+			<Button class="mx-2" leftIcon="tabler:mail" size={"md"} variant="primary">
+				Button
+			</Button>
 		</>
 	);
 });
 
 export const head: DocumentHead = {
-	title: "Welcome to Qwik Docs Starter",
+	title: "Appist SDK",
 };
