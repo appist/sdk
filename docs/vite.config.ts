@@ -26,10 +26,5 @@ export default defineConfig(() => {
 			qwikVite(),
 			tsconfigPaths(),
 		],
-		preview: {
-			headers: {
-				"Cache-Control": "public, max-age=600",
-			},
-		},
 	};
 });
