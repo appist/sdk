@@ -1,8 +1,8 @@
 {
   "recommendations": [
-    "antfu.unocss",
     "arrterian.nix-env-selector",
     "bbenoist.nix",
+    "bradlc.vscode-tailwindcss",
     "eamodio.gitlens",
     "editorconfig.editorconfig",
     "esbenp.prettier-vscode",
