@@ -28,8 +28,7 @@
     "build.types": "tsc --emitDeclarationOnly",
     "clean": "app rm lib,lib-types,*.tsbuildinfo",
     "dev": "nodemon -w src -e 'ts tsx' -q --exec 'pnpm run build'",
-    "prerelease": "pnpm clean && pnpm build",
-    "release": "npm publish --access=public",
+    "release": "pnpm clean && pnpm build && npm publish --access=public",
     "test": "vitest --passWithNoTests"
   },
   "devDependencies": {
