@@ -1,5 +1,5 @@
 import { $, component$, HTMLAttributes, useSignal } from "@builder.io/qwik";
-import { clsx, Button, Size } from "~/index";
+import { clsx, Button, Size } from "../../index";
 
 export interface BurgerProps extends HTMLAttributes<HTMLElement> {
 	/**
@@ -13,7 +13,7 @@ export interface BurgerProps extends HTMLAttributes<HTMLElement> {
  */
 export const Burger = component$((props: BurgerProps) => {
 	const opened = useSignal(false);
-	const { class: _class = "", size = "md" } = props;
+	const { class: _class = "", size = "md", ...rest } = props;
 	const getSizeClasses = (size: Size = "md") => {
 		switch (size) {
 			case "xs":
@@ -71,12 +71,13 @@ export const Burger = component$((props: BurgerProps) => {
 
 	return (
 		<Button
-			class={clsx("block relative", {
+			class={clsx("burger block relative", {
 				[_class as string]: true,
 				[getSizeClasses(size)]: true,
 			})}
 			onClick$={() => (opened.value = !opened.value)}
 			unstyled={true}
+			{...rest}
 		>
 			<div class={clsx(getSizePadding(size), getSizeClasses(size))}>
 				<span

@@ -1,5 +1,5 @@
 import { component$, useStyles$, Slot, HTMLAttributes } from "@builder.io/qwik";
-import { clsx } from "~/utils";
+import { clsx } from "../../index";
 import styles from "./ButtonGroup.css?inline";
 
 export interface ButtonGroupProps extends HTMLAttributes<HTMLElement> {
@@ -9,7 +9,7 @@ export interface ButtonGroupProps extends HTMLAttributes<HTMLElement> {
 export const ButtonGroup = component$((props: ButtonGroupProps) => {
 	useStyles$(styles);
 
-	const { class: _class = "", orientation = "horizontal" } = props;
+	const { class: _class = "", orientation = "horizontal", ...rest } = props;
 
 	return (
 		<div
@@ -20,6 +20,7 @@ export const ButtonGroup = component$((props: ButtonGroupProps) => {
 				"btn-group",
 				`btn-group-${orientation}`,
 			)}
+			{...rest}
 		>
 			<Slot />
 		</div>

@@ -1,5 +1,5 @@
 import { createDOM } from "@builder.io/qwik/testing";
-import { Button } from "~/index";
+import { Button } from "../../index";
 
 describe("Button", () => {
 	it("should render the text correctly", async () => {

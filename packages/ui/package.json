@@ -1,7 +1,7 @@
 {
   "name": "@appist/ui",
   "description": "A modern UI library built with Qwik/TailwindCSS.",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "private": false,
   "type": "module",
   "license": "MIT",
@@ -38,11 +38,13 @@
     "test": "vitest --passWithNoTests"
   },
   "devDependencies": {
-    "@appist/cli": "workspace:0.0.1",
+    "@appist/cli": "workspace:*",
     "@builder.io/qwik": "^0.15.0",
     "@builder.io/qwik-city": "^0.0.128",
+    "@types/jsdom": "^20.0.1",
     "@types/node": "^18.11.10",
     "autoprefixer": "^10.4.13",
+    "jsdom": "^20.0.3",
     "node-fetch": "^3.3.0",
     "nodemon": "^2.0.20",
     "postcss": "^8.4.19",

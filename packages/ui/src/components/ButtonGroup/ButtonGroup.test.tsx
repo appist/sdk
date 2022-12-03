@@ -1,5 +1,5 @@
 import { createDOM } from "@builder.io/qwik/testing";
-import { Button, ButtonGroup } from "~/index";
+import { Button, ButtonGroup } from "../../index";
 
 describe("Button", () => {
 	it("should render the horizontal orientation correctly", async () => {

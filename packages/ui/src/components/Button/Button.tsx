@@ -1,7 +1,7 @@
 import { component$, HTMLAttributes, Slot } from "@builder.io/qwik";
 import { Link } from "@builder.io/qwik-city";
-import { ButtonType, Size, Variant } from "~/constants";
-import { clsx } from "~/utils";
+import { ButtonType, Size, Variant } from "../../index";
+import { clsx } from "../../index";
 
 export interface ButtonProps extends HTMLAttributes<HTMLElement> {
 	/**
@@ -82,18 +82,18 @@ export const Button = component$((props: ButtonProps) => {
 	const {
 		class: _class = "",
 		disabled = false,
-		href,
+		href = "",
 		icon = "",
 		leftIcon,
 		loaderIcon = "gg:spinner",
-		loaderPosition,
+		loaderPosition = "left",
 		loading = false,
 		rightIcon,
-		size,
-		type,
+		size = "md",
+		type = "button",
 		unstyled = false,
-		variant,
-		...otherProps
+		variant = "primary",
+		...rest
 	} = props;
 	const isExternalLink = /^http(s)?:\/\//.test(href || "");
 	const Element = href ? (isExternalLink ? "a" : Link) : "button";
@@ -145,7 +145,7 @@ export const Button = component$((props: ButtonProps) => {
 			case "lg":
 				return 22;
 
-			default:
+			case "xl":
 				return 24;
 		}
 	};
@@ -194,7 +194,7 @@ export const Button = component$((props: ButtonProps) => {
 			disabled={disabled || loading}
 			href={href}
 			type={type}
-			{...otherProps}
+			{...rest}
 		>
 			{leftIcon || (loading && loaderPosition === "left") ? (
 				<iconify-icon

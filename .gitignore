@@ -1,6 +1,7 @@
 .DS_Store
 dist
 node_modules
-packages/ui/lib
-packages/ui/lib-types
-**/*.tsbuildinfo
+lib
+lib-types
+server
+tsconfig.tsbuildinfo
